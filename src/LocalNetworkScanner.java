@@ -97,7 +97,8 @@ public class LocalNetworkScanner {
     }
 
     private void displayProgress(double totalCount, double currentCount) {
-        System.out.println(String.format("%.2f", (1 - currentCount / totalCount) * 100 ) + "%");
+        System.out.print("\r");
+        System.out.print(String.format("%.2f", (1 - currentCount / totalCount) * 100 ) + "%");
     }
 
 }
